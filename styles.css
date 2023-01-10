@@ -1,0 +1,208 @@
+/* Header styles */
+html {
+  background: rgb(48, 48, 48);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  width: fit-content;
+}
+
+header {
+  color: blanchedalmond;
+}
+
+h1 {
+  text-align: center;
+}
+
+#headerText {
+  text-align: center;
+  padding: 25px;
+}
+
+/* Remove image until breakpoint reached lower */
+#pic {
+  display: none;
+}
+
+/* Table holder */
+#fullTable {
+  width: fit-content;
+  background-color: rgb(60, 60, 60);
+  border-top: 2px solid blanchedalmond;
+  border-radius: 5px;
+  padding: 1%;
+}
+
+/* media query to hide periodic table if screen thinner than 200px */
+@media only screen and (max-width: 600px) {
+  #fullTable {
+    display: none;
+  }
+
+  /* and then to show picture of periodic table */
+
+  #pic {
+    width: 90vw;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+
+/* FlexBox set up */
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(18, 5vw);
+  gap: .4vw;
+}
+
+.item {
+  background-color: rgb(60, 60, 60);
+  border: 3px solid blanchedalmond;
+  border-radius: 8px;
+  width: 4vw;
+  height: 4vw;
+}
+
+/*.upperSection {}*/
+
+.lowerSection {
+  padding-top: 2vh;
+}
+
+/* element styling */
+
+.atNum {
+  font-size: .75vw;
+  text-align: right;
+  margin: 0.25vw;
+}
+
+.symbol {
+  font-size: 1.75vw;
+  font-weight: bold;
+  text-align: center;
+  margin: 0vw auto;
+}
+
+.nonmetal {
+  color: blanchedalmond;
+  border-color: blanchedalmond;
+}
+
+.noble {
+  color: azure;
+}
+
+.alkaliMetal {
+  color: coral;
+  border-color: coral;
+}
+
+.alkaliEarthMetal {
+  color: rgb(164, 145, 177);
+  border-color: rgb(164, 145, 177);
+}
+
+.halogen {
+  color: bisque;
+  border-color: bisque;
+}
+
+.postTransitionMetal {
+  color: aquamarine;
+  border-color: aquamarine;
+}
+
+.metalloid {
+  color: rgb(215, 215, 125);
+  border-color: rgb(215, 215, 125);
+}
+
+.transitionMetal {
+  color: lightcyan;
+  border-color: lightcyan;
+}
+
+.lanthanide {
+  color: cadetblue;
+  border-color: cadetblue;
+}
+
+.actinide {
+  color: skyblue;
+  border-color: skyblue;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+/* Styling change break */
+
+@media only screen and (max-width: 800px) {
+  body {
+    background-color: rgb(164, 145, 177);
+  }
+}
+
+/* Hover states for groups */
+.nonmetal:hover {
+  background-color: rgb(100, 100, 100);
+  transform: scale(1.1);
+  transform: rotate(5deg);
+}
+
+.noble:hover {
+  background-color: rgb(100, 100, 100);
+  transform: scale(1.1);
+  transform: rotate(5deg);
+}
+
+.alkaliMetal:hover {
+  background-color: rgb(100, 100, 100);
+  transform: scale(1.1);
+  transform: rotate(5deg);
+}
+
+.alkaliEarthMetal:hover {
+  background-color: rgb(100, 100, 100);
+  transform: scale(1.1);
+  transform: rotate(5deg);
+}
+
+.halogen:hover {
+  background-color: rgb(100, 100, 100);
+  transform: scale(1.1);
+  transform: rotate(5deg);
+}
+
+.postTransitionMetal:hover {
+  background-color: rgb(100, 100, 100);
+  transform: scale(1.1);
+  transform: rotate(5deg);
+}
+
+.metalloid:hover {
+  background-color: rgb(100, 100, 100);
+  transform: scale(1.1);
+  transform: rotate(5deg);
+}
+
+.transitionMetal:hover {
+  background-color: rgb(100, 100, 100);
+  transform: scale(1.1);
+  transform: rotate(5deg);
+}
+
+.lanthanide:hover {
+  background-color: rgb(100, 100, 100);
+  transform: scale(1.1);
+  transform: rotate(5deg);
+}
+
+.actinide:hover {
+  background-color: rgb(100, 100, 100);
+  transform: scale(1.1);
+  transform: rotate(5deg);
+}
